@@ -1,0 +1,838 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family: courier,arial,helvetica;
+	background-image: url( "../imgs/fundopaladar1.jpg");
+	background-repeat:no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	
+}
+
+#container {
+	width: 1001px;
+	margin: 0 auto;
+	
+}
+
+ 
+header {
+	width:1000px;
+	height: 230px;
+	background-image: url( "../imgs/pngtree-delicious-food-small-fresh-minimalist-green-food-poster-background-image_151576.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+header  h1{
+	font-size: 0;
+}
+
+
+
+#slider {
+	float:left;
+	width: 1000px;
+	height:200px;
+	border-bottom: 15px solid #00551A;
+	margin-top: -25px;
+	margin-bottom: 40px;
+}
+
+#slider img{
+    opacity: 0;
+
+
+    width: 1000px;
+	height: 200px;
+
+    object-fit: cover;
+	position:absolute;
+
+    transition: opacity 800ms;
+}
+
+#slider img.selected { 
+    opacity: 1;
+}
+
+#flop {
+	display:none;
+	}
+
+
+#check {
+	display:none;
+	}
+
+#icone {
+	cursor:pointer;
+	padding:15px;
+	position:absolute;
+	z-index:1;
+	position:fixed;
+	width: 33px;
+	}
+.barra {
+	background-color:#060;
+	height:100vh;
+	width:100% ;
+	position:absolute;
+	transition: all .2s linear;
+	left:-100%;
+	position:fixed
+	}
+
+nav {
+	width: 100%;
+	position:absolute;
+	top:60px;
+	}
+.link {
+	background-color:#093;
+	padding:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12pt;
+	transition: all .2s linear;
+	color:#FFF;
+	border-bottom:2px solid #060;
+	font-weight: bold;
+	}
+
+#check:checked ~ .barra {
+	transform: translateX(100%);
+	}
+
+
+#nr {
+	font-size: 18px;
+	padding-top: 0px;
+	height: 37px;
+}
+
+
+#contato {
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: aliceblue;
+	margin-left: 650px;
+	font-size: 17px;
+	float:right;
+	padding-top:15px;
+	padding-right:15px;
+}
+
+#contato li {
+	margin-top:3px;
+	}
+
+
+#logopaladar{
+	width: 300px;
+	height: 180px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(../imgs/pg.PNG);
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+}
+
+
+
+.menu ul {
+	width: 780px;
+	height: auto;
+	margin-top: 120px;
+	margin-left:170px;
+	float:left;
+}
+
+
+.menu li a{
+	
+	float: left;
+	text-align:center;
+	font-size: 23px;
+	
+	margin-left: 15px;
+	padding-top: 6px;
+	text-decoration: none;
+	border: 2px solid #FFFFFF;
+	height: 30px;
+	width: 150px;
+	font-family: arial;
+	font-weight:bold;
+	background-color:#00551A;
+	border-radius: 20px;
+}
+
+.menu li a:hover {
+	color: #000;
+	border-radius: 20px;
+	transition: 0.3s ease;
+}
+
+.menu a {
+	text-decoration: none;
+	color: white;
+	 
+	
+}
+
+
+.menu li a:active {
+	
+	background-color:#00551A;
+}
+
+#back {
+	width: 1000px;
+	height:auto;
+	padding-bottom: 105px;
+	background-color:#FFFFFF;
+	background-image: url( "../imgs/fundomain1.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+
+
+main h2 {
+	font-family:"Times New Roman","Gotham", "serif","arial";
+	font-size: 35px;
+	color: white;
+	height: 35px;
+	padding-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 475px;
+}
+
+
+main h3 {
+	font-family: "Arial Black", "Hoefler Text", "Liberation Serif", "Times", "Times New Roman", "serif";
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+main h4 {
+	font-family: "Arial Black", "Hoefler Text", "Liberation Serif", "Times", "Times New Roman", "serif";
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: center;
+	margin-top: 15px;
+	
+}
+
+main h5 {
+	font-family: "Arial Black", "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	width: 600px;
+	margin: 0 auto;
+	
+}
+
+.subtitulo {
+	margin-bottom: 25px;
+	border-bottom: 2px solid  #013B0D;
+	border-top: 2px solid #013B0D;
+	background-color: #00551A;
+}
+
+
+main p {
+	font-family: arial,"Times New Roman","Gotham", "serif","arial" ;
+	margin-top: 20px;
+	font-weight: bold;
+	text-align:justify;
+	line-height: 20px;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+main ol {
+	list-style:circle;
+	font-weight: bold;
+	text-align:justify;
+	line-height: 20px;
+	width: 600px;
+	margin: 15px auto 0 auto;
+	padding-left: 50px;
+	font-size: 18px;
+	
+}
+
+main dl {
+	font-family: arial,"Times New Roman","Gotham", "serif","arial" ;
+	margin-top: 20px;
+	font-weight: bold;
+	text-align:justify;
+	line-height: 20px;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+main dd {
+	margin-top: 15px;
+}
+
+main figure img {
+	width: 200px;
+	height: 150px;
+	
+	margin-left: 25px;
+	margin-top: 50px;
+	
+	border: 5px solid  #00551A;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 50px;
+}
+
+
+
+
+
+footer {
+	background-image: url( "../imgs/roda pe verde escuro.jpg");
+	background-size: 100% 100%;
+	width: 1000px;
+	height: 130px;
+	clear: both;
+	display: flex;
+}
+
+.street {
+	width: 100%;
+	height:auto;
+}
+
+
+
+
+.logorodape {
+	width: 240px;
+	margin-top: 5px;
+	padding: 10px 0 0 15px;
+	float: left;
+	font-family: arial,"Times New Roman","Gotham";
+	text-align:left;
+	font-style: italic;
+	color: white;
+	
+}
+
+
+
+
+footer img {
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+
+
+
+
+.minhaimgrope {
+	width: auto;
+	right: 10px;
+	margin-top: 77px;
+}
+
+.minhaimgrope img {
+		width: 35px;
+		height: 35px;
+	}
+
+footer h1 {
+	color: #FFFFFF;
+}
+
+
+footer ul {
+	display:flex;
+	align-items: center;
+	float: right;
+}
+
+footer li {
+	margin-right: 10px;
+}
+
+footer figcaption {
+	color: aliceblue;
+	float: right;
+	font-family: arial,"Times New Roman","Gotham", "serif","arial" ;
+	font-size: 19px;
+	padding-top: 16px;
+	padding-right: 13px;
+	
+}
+
+footer figure {
+	background-color:darkgreen;
+	border-radius: 10px;
+	
+}
+
+ a {
+	color: darkgreen;
+	text-decoration: none;
+}
+
+
+
+.clica a:active {
+	text-decoration: none;
+}
+
+#whatsapp {
+	width: auto;
+	margin-left: -300px;
+}
+
+#whatsapp img {
+	width: 90px;
+	margin-top: -15px;
+	margin-left: -5px;
+}
+
+.lista2 dt {
+	margin-top: 10px;
+}
+
+.lista2 dd {
+	margin-top: 5px;
+}
+
+
+/* css mobile */
+
+
+@media screen and (max-width: 980px) {
+	#container {
+		width: 100%;
+	}
+	
+	header {
+		width: 100%;
+		height: 170px;
+		background-color: #00551A;
+		background-size: 100% 100%;
+	}
+	
+	#contato {
+		font-size: 0;
+	}
+	
+	#googlemaps {
+		display: none;
+	}
+	
+	#menu2 ul {
+		display:none;
+	}
+
+	
+
+	
+	#back {
+		width: 100%;
+		height: auto;
+		margin-bottom: -13px;
+		background-size: 100% 100%;
+	}
+	
+	.slider{
+		display:none;
+	}
+	
+	main h1 {
+		font-size: 200%;
+	}
+	main h2 {
+		font-size: 140%;
+		padding-bottom: 5px;
+		margin-top: 2px;
+		width: 200px;
+	}
+
+	.subtitulo {
+		height: 55px;
+	}
+
+
+	main h3 {
+		font-size: 120%;
+	}
+	
+	main h4 {
+		width: 100%;
+		font-size:120%;	
+	}
+	
+	#titulo5 {
+		width: 100%;
+		font-size:100%;	
+	}
+	
+	main p {
+		font-size: 100%;
+		width: 90%;
+		margin-left: 5%;
+		text-align:center;
+		line-height: 25px;
+	}
+	
+	#mobileol {
+		font-size:120%;
+		width: 80%;
+	}
+	
+	main dl {
+	font-family: arial,"Times New Roman","Gotham", "serif","arial" ;
+	margin-top: 20px;
+	font-weight: bold;
+	text-align:justify;
+	line-height: 20px;
+	width: 90%;
+	font-size: 100%;
+	margin-right:auto;
+	margin-left: auto;
+}
+	
+	
+	
+	footer {
+		width: 100%;
+		height: auto;
+	}
+	
+	
+	
+	
+	
+	.mobilecontato {
+		display: flex;
+		float: right;
+		margin-top: 90px;
+		margin-bottom: 10px;
+	}
+	
+	
+		#tituloform {
+			margin-left: 20%;
+			width: 60%;
+	}
+	
+	
+		#subtituloform {
+		margin-left: 20%;
+		width: 60%;
+	}
+	
+	
+	
+		#mobileform {
+		margin-left: 20%;
+	}
+	
+	#galeria img {
+			width: 25%;
+			height: 160px;
+			margin-left: 3%;
+		}
+	
+
+	
+	
+	#logopaladar{
+		width:250px;
+		height:160px;
+		margin-top:60px;
+		background-size:100% 120%;
+	}
+	
+	#whatsapp {
+		font-size: 100%;
+		margin-left: 20px;
+		text-align: left;
+	}
+	
+
+	
+	#flop {
+		display:block;
+		margin-top:-60px;
+		float:left;
+		}
+	#icone {
+		background-color:#060;
+		width:100%;
+		}
+		
+		.minhaimgrope img {
+			width: 35px;
+			height: 35px;
+		}
+
+
+
+	@media (max-width: 839px) {
+		
+		.mobilecontato {
+			display: block;
+			float: right;
+			margin-top: 10px;
+		}
+		
+		.mobilecontato li {
+			margin-top: 10px;
+		}
+		
+		
+		
+		
+	}
+	
+	
+	@media (max-width: 490px) {
+		
+		
+			
+		#tituloform {
+			margin-left: 10%;
+			width: 60%;
+	}
+	
+	
+		#subtituloform {
+		margin-left: 10%;
+		width: 60%;
+	}
+	
+	
+	
+		#mobileform {
+		margin-left: 10%;
+	}
+		
+		#galeria img {
+			width: 40%;
+			height: 100px;
+			margin-left: 3%;
+		}
+		
+		
+	}
+	
+	
+	
+	
+	@media (max-width: 500px) {
+		.mobilecontato {
+			display: block;
+			float: left;
+			margin-top: 10px;
+			margin-left: 24%;
+		}
+		
+		.mobilecontato li {
+			margin-top: 10px;
+		}
+
+
+		.logorodape {
+			margin-left: 7%;
+		}
+
+		
+
+	}
+	
+	
+	
+		
+		
+	
+	
+		
+	
+/* adicionar aqui os novos estilos para mobile */
+}
+
+
+@media screen and (min-width: 1500px){
+	
+	#container {
+		width: 1500px;
+	}
+	
+	header {
+		width: 1500px;
+		height: 350px;
+	}
+	
+	#contato {
+	    margin-left: 990px;
+	    padding-top: 25px;
+	    font-size: 19px;
+}
+	#logopaladar{
+		width: 370px;
+		height: 250px;
+	}
+	
+	
+	.menu ul {
+	width: 1200px;
+	height: auto;
+	margin-top: 180px;
+}
+	
+	.menu li {
+		margin-left:155px;
+		}
+	
+	
+	.menu li a{
+		float: left;
+		text-align:center;
+		height: 50px;
+		width: 150px;
+		font-size: 30px ;
+		padding-top: 20px;
+		border-radius: 20px;
+		margin-left:30px;
+}
+	#nr {
+		font-size: 27px;
+		padding-top: 10px;
+		height: 60px;
+		width: 190px;
+}
+	
+	#slider {
+		width: 1500px;
+		height: 200px;
+		margin-bottom: 70px;
+		border-bottom: 15px solid #00551A;
+	}
+	
+	#slider img {
+		width: 1500px;
+		height: 200px;
+	}
+	
+	#back {
+		width: 1500px;
+		
+	}
+	
+	main h1 {
+		font-size: 70px;
+	}
+	
+	main h2 {
+		font-size: 60px;
+		height: 70px;
+		width: 850px;
+	}
+	
+	main h3 {
+		font-size: 40px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	
+	main h4 {
+		font-size: 30px;
+	}
+	
+	main p {
+		line-height: 40px;
+		width: 900px;
+		font-size: 30px;
+		margin: 0 auto;
+		margin-top: 35px;
+		
+	}
+	
+	
+	
+	#mobileol {
+		font-size:30px;
+
+	}
+	
+	#mobiledl {
+		font-size: 30px;
+		margin-left: 5%;
+		text-align:justify;
+		line-height: 25px;
+		line-height: 40px;
+		margin: 0 auto;
+		width: 900px;
+	}
+	
+	#titulo5 {
+		font-size: 30px;
+		margin-bottom: 5px;
+	}
+	
+	
+
+	
+	footer {
+		width: 1500px;
+		height: auto;
+		font-size: 22px;
+	}
+	
+	.logorodape {
+		margin-bottom: 20px;
+		width: 350px;
+	}
+	
+	.minhaimgrope {
+		margin-top: 115px;
+	}
+	
+	.minhaimgrope figure {
+		width: 285px;
+		height:70px;
+	}
+	
+	.minhaimgrope img {
+		width: 80px;
+		height: 60px;
+	}
+	
+	.minhaimgrope figcaption {
+		font-size: 26px;
+		padding-top: 25px;
+	}
+	
+	
+	#titulo5 {
+		text-align: left;
+		width: 700px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+	
+	#whatsapp {
+		margin-left: -499px
+	}
+	
+}
+
+
+
